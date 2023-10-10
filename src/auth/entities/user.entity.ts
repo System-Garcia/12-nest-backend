@@ -3,6 +3,9 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 @Schema()
 export class User {
   // _id: string // Mongo lo crea automaticamente
+
+  _id?: string;
+
   @Prop({ required: true })
   name: string;
 
